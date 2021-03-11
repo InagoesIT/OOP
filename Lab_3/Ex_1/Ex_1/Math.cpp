@@ -47,12 +47,10 @@ int Math::Add(int count, ...)
     va_list arr;
     va_start(arr, count);
 
-	int sum = 0;
-	va_list vl;
-	va_start(vl, count);
+    int sum = 0;
 
-	for (int i = 0; i < count; i++)
-		sum += va_arg(vl, int);
+    for (int i = 0; i < count; i++)
+	sum += va_arg(arr, int);
 
     va_end(arr);
 	return sum;
