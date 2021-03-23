@@ -1,0 +1,9 @@
+#pragma once
+#include "Car.h"
+
+class Mercedes : public Car
+{
+public:
+	Mercedes();
+	const char* GetName();
+};
