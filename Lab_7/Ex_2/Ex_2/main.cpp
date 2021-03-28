@@ -1,5 +1,7 @@
 #include <iostream>
+
 using namespace std;
+
 template <class T>
 class Vector
 {
@@ -27,6 +29,13 @@ public:
 		size = 1;
 	}
 
+	Vector(int size)
+	{
+		list = new T[size];
+		nr = 0;
+		this->size = size;
+	}
+
 	void push(T elem)
 	{
 		if (size < ++nr)
@@ -41,15 +50,18 @@ public:
 
 	void remove(int index)
 	{
-		int i = index;
-
-		while (i < this->nr)
+		if (index < nr)
 		{
-			list[i] = list[i + 1];
-			++i;
-		}
-			
-		--nr;
+			int i = index;
+
+			while (i < this->nr)
+			{
+				list[i] = list[i + 1];
+				++i;
+			}
+
+			--nr;
+		}		
 	}
 
 	void insert(int index, T elem)
@@ -115,12 +127,9 @@ public:
 
 	void set(int index, T elem)
 	{
-		if (index <= this->nr)
-		{
-			list[index] = elem;
-			if (index == this->nr)
-				++nr;
-		}
+		list[index] = elem;
+		if (index == this->nr)
+			++nr;
 	}
 
 	int count()
@@ -152,7 +161,7 @@ public:
 
 int main()
 {
-	Vector<int> v1;
+	Vector<int> v1 = {};
 	v1.push(3);
 	v1.push(5);
 	v1.push(1);
