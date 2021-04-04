@@ -14,11 +14,11 @@ class Vector
 	void resize()
 	{
 		T* temp = new T[(this->size) * 2];
-		memcpy(temp, list, (nr - 1) * sizeof(T));
-		list = new T[(this->size) * 2];
-		memcpy(list, temp, (nr - 1) * sizeof(T));
-		this->size *= 2;
-		
+		for (int i = 0; i < nr - 1; i++)
+			temp[i] = list[i];
+		delete[] list;
+		list = temp;
+		this->size *= 2;		
 	}
 
 public:
@@ -36,7 +36,7 @@ public:
 		this->size = size;
 	}
 
-	void push(T elem)
+	void push(const T& elem)
 	{
 		if (size < ++nr)
 			resize();
