@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ea5c7104-3d3f-4b5d-b3ec-8998f60f7f73}</ProjectGuid>
+    <ProjectGuid>{b636f14e-2ccd-4203-8920-81928ff9fb07}</ProjectGuid>
     <RootNamespace>Ex1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -139,19 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\old\Acquantaince.cpp" />
-    <ClCompile Include="..\..\old\Agenda.cpp" />
-    <ClCompile Include="..\..\old\Colleague.cpp" />
-    <ClCompile Include="..\..\old\Friend.cpp" />
-    <ClCompile Include="..\..\old\main.cpp" />
+    <ClCompile Include="Acquantaince.cpp" />
+    <ClCompile Include="Agenda.cpp" />
+    <ClCompile Include="Colleague.cpp" />
+    <ClCompile Include="Friend.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\old\Acquantaince.h" />
-    <ClInclude Include="..\..\old\Agenda.h" />
-    <ClInclude Include="..\..\old\Colleague.h" />
-    <ClInclude Include="..\..\old\Contact.h" />
-    <ClInclude Include="..\..\old\ContactType.h" />
-    <ClInclude Include="..\..\old\Friend.h" />
+    <ClInclude Include="Acquantaince.h" />
+    <ClInclude Include="Agenda.h" />
+    <ClInclude Include="Colleague.h" />
+    <ClInclude Include="Contact.h" />
+    <ClInclude Include="ContactType.h" />
+    <ClInclude Include="Friend.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
