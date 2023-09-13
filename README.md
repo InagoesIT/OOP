@@ -1,9 +1,7 @@
 # OOP
-Anul 1, sem 2 de facultate cu ex facute la cursul fain de OOP.
-
+First year of university, my second semester. Here you can see all the exercises I completed at my OOP course.
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-Navigare:
+Navigation:
 
-Proiectul contine foldere cu numarul lab corespunzator care la randul lui va contine ex din laboratorul respectiv. Am facut tot cat de bine
-am putut. :)
+The project contains folders with the laboratory number it represents. I tried my best. :)
